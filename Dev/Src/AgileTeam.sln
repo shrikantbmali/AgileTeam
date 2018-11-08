@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam", "AgileTeam\AgileTeam.csproj", "{4B667388-2C7D-43CB-9764-711319B125BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.AppInteraction", "AgileTeam.AppInteraction\AgileTeam.AppInteraction.csproj", "{850F0B33-696D-46FF-8A6F-E70FEC6BD35E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supportings", "Supportings", "{28A7E45A-FD55-453B-A272-B3726E1AB0C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.Core", "AgileTeam.Core\AgileTeam.Core.csproj", "{7F248DE0-AB33-437C-BEF2-913F31A21C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.Common", "AgileTeam.Common\AgileTeam.Common.csproj", "{CA105FC3-35C7-47AA-8710-F76DD73D4E18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.Data", "AgileTeam.Data\AgileTeam.Data.csproj", "{8550CA4C-2986-4661-833C-3CEAB95748DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.DataContext", "AgileTeam.DataContext\AgileTeam.DataContext.csproj", "{4219A519-5F34-4CDE-997E-84840F9F9583}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D5CDB185-58DB-4FF8-A4AD-1DAA1F66F3C3}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionDependencyGraph.dgml = SolutionDependencyGraph.dgml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Infrastructure", "..\..\..\..\Shrikant.VS\Utilities\System\System.Infrastructure\System.Infrastructure.csproj", "{077597BB-E9E3-4811-A7CD-EC03090CDCFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Mvvm", "..\..\..\..\Shrikant.VS\Utilities\System\System.Mvvm\System.Mvvm.csproj", "{49B662DD-2853-40A6-AF29-9FE9B214F3E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Common", "..\..\Supportings\System.Common\System.Common.csproj", "{ADE84F32-3D9B-4FC9-A13F-90B8A76DDD48}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shrikant.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AgileTeam\\AgileTeam.csproj
+		SccProjectName1 = AgileTeam
+		SccLocalPath1 = AgileTeam
+		SccProjectUniqueName2 = AgileTeam.AppInteraction\\AgileTeam.AppInteraction.csproj
+		SccProjectName2 = AgileTeam.AppInteraction
+		SccLocalPath2 = AgileTeam.AppInteraction
+		SccProjectUniqueName3 = AgileTeam.Core\\AgileTeam.Core.csproj
+		SccProjectName3 = AgileTeam.Core
+		SccLocalPath3 = AgileTeam.Core
+		SccProjectUniqueName4 = AgileTeam.Common\\AgileTeam.Common.csproj
+		SccProjectName4 = AgileTeam.Common
+		SccLocalPath4 = AgileTeam.Common
+		SccProjectUniqueName5 = AgileTeam.Data\\AgileTeam.Data.csproj
+		SccProjectName5 = AgileTeam.Data
+		SccLocalPath5 = AgileTeam.Data
+		SccProjectUniqueName6 = AgileTeam.DataContext\\AgileTeam.DataContext.csproj
+		SccProjectName6 = AgileTeam.DataContext
+		SccLocalPath6 = AgileTeam.DataContext
+		SccProjectUniqueName7 = ..\\..\\..\\..\\Shrikant.VS\\Utilities\\System\\System.Infrastructure\\System.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName7 = AgileTeam.sln
+		SccProjectName7 = ../../../Utilities/System/System.Infrastructure
+		SccLocalPath7 = ..\\..\\..\\..\\Shrikant.VS\\Utilities\\System\\System.Infrastructure
+		SccProjectUniqueName8 = ..\\..\\..\\..\\Shrikant.VS\\Utilities\\System\\System.Mvvm\\System.Mvvm.csproj
+		SccProjectTopLevelParentUniqueName8 = AgileTeam.sln
+		SccProjectName8 = ../../../Utilities/System/System.Mvvm
+		SccLocalPath8 = ..\\..\\..\\..\\Shrikant.VS\\Utilities\\System\\System.Mvvm
+		SccProjectUniqueName9 = ..\\..\\Supportings\\System.Common\\System.Common.csproj
+		SccProjectTopLevelParentUniqueName9 = AgileTeam.sln
+		SccProjectName9 = ../../../Utilities/System/System.Common
+		SccLocalPath9 = ..\\..\\Supportings\\System.Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B667388-2C7D-43CB-9764-711319B125BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B667388-2C7D-43CB-9764-711319B125BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B667388-2C7D-43CB-9764-711319B125BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B667388-2C7D-43CB-9764-711319B125BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{850F0B33-696D-46FF-8A6F-E70FEC6BD35E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{850F0B33-696D-46FF-8A6F-E70FEC6BD35E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{850F0B33-696D-46FF-8A6F-E70FEC6BD35E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{850F0B33-696D-46FF-8A6F-E70FEC6BD35E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F248DE0-AB33-437C-BEF2-913F31A21C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F248DE0-AB33-437C-BEF2-913F31A21C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F248DE0-AB33-437C-BEF2-913F31A21C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F248DE0-AB33-437C-BEF2-913F31A21C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA105FC3-35C7-47AA-8710-F76DD73D4E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA105FC3-35C7-47AA-8710-F76DD73D4E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA105FC3-35C7-47AA-8710-F76DD73D4E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA105FC3-35C7-47AA-8710-F76DD73D4E18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8550CA4C-2986-4661-833C-3CEAB95748DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8550CA4C-2986-4661-833C-3CEAB95748DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8550CA4C-2986-4661-833C-3CEAB95748DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8550CA4C-2986-4661-833C-3CEAB95748DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4219A519-5F34-4CDE-997E-84840F9F9583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4219A519-5F34-4CDE-997E-84840F9F9583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4219A519-5F34-4CDE-997E-84840F9F9583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4219A519-5F34-4CDE-997E-84840F9F9583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE84F32-3D9B-4FC9-A13F-90B8A76DDD48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE84F32-3D9B-4FC9-A13F-90B8A76DDD48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE84F32-3D9B-4FC9-A13F-90B8A76DDD48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE84F32-3D9B-4FC9-A13F-90B8A76DDD48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{077597BB-E9E3-4811-A7CD-EC03090CDCFD} = {28A7E45A-FD55-453B-A272-B3726E1AB0C9}
+		{49B662DD-2853-40A6-AF29-9FE9B214F3E9} = {28A7E45A-FD55-453B-A272-B3726E1AB0C9}
+		{ADE84F32-3D9B-4FC9-A13F-90B8A76DDD48} = {28A7E45A-FD55-453B-A272-B3726E1AB0C9}
+	EndGlobalSection
+EndGlobal

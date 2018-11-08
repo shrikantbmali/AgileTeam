@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3A1648A-CEAE-45F0-ADE3-47F860CFABB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AgileTeam.Wpf.Logic</RootNamespace>
+    <AssemblyName>AgileTeam.Wpf.Logic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppExecution\AppExecutionFlow.cs" />
+    <Compile Include="AppExecution\ExectionFlowType.cs" />
+    <Compile Include="AppExecution\ExecutionFlowChangedEvenArgs.cs" />
+    <Compile Include="AppExecution\MainExecutionFlow.cs" />
+    <Compile Include="AppExecution\SqlServerSetupExecutionFlow.cs" />
+    <Compile Include="AppExecution\UserAccountSetupCheckExecutionFlow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AddUserVM.cs" />
+    <Compile Include="ViewModels\AgileTeamVM.cs" />
+    <Compile Include="ViewModels\CreateNewProjectVM.cs" />
+    <Compile Include="ViewModels\IViewModelFactory.cs" />
+    <Compile Include="ViewModels\IViewModels\IAddUserViewModel.cs" />
+    <Compile Include="ViewModels\IViewModels\IAgileTeamViewModel.cs" />
+    <Compile Include="ViewModels\IViewModels\ICreateNewProjectViewModel.cs" />
+    <Compile Include="ViewModels\IViewModels\ILoginViewModel.cs" />
+    <Compile Include="ViewModels\IViewModels\IMainViewModel.cs" />
+    <Compile Include="ViewModels\IViewModels\ISelectProjectViewModel.cs" />
+    <Compile Include="ViewModels\IViewModels\ISettingsViewModel.cs" />
+    <Compile Include="ViewModels\IViewModels\ISqlServerSetupViewModel.cs" />
+    <Compile Include="ViewModels\IViewModels\IStartViewModel.cs" />
+    <Compile Include="ViewModels\IViewModels\IUserPermissionViewModel.cs" />
+    <Compile Include="ViewModels\IViewModels\ViewModelEventArgs.cs" />
+    <Compile Include="ViewModels\LoginVM.cs" />
+    <Compile Include="ViewModels\MainVM.cs" />
+    <Compile Include="ViewModels\SelectProjectVM.cs" />
+    <Compile Include="ViewModels\SettingsVM.cs" />
+    <Compile Include="ViewModels\SqlServerSetupVM.cs" />
+    <Compile Include="ViewModels\StartVM.cs" />
+    <Compile Include="ViewModels\UserPermissionVM.cs" />
+    <Compile Include="ViewModels\ViewModelFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Dev\Src\Supportings\System.Infrastructure\System.Infrastructure.csproj">
+      <Project>{077597bb-e9e3-4811-a7cd-ec03090cdcfd}</Project>
+      <Name>System.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Dev\Src\Supportings\System.Mvvm\System.Mvvm.csproj">
+      <Project>{49b662dd-2853-40a6-af29-9fe9b214f3e9}</Project>
+      <Name>System.Mvvm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AgileTeam.Core.Entities\AgileTeam.Core.Entities.csproj">
+      <Project>{D19C4FAD-499A-4F05-A9C8-72F1811E5E25}</Project>
+      <Name>AgileTeam.Core.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AgileTeam.Core\AgileTeam.Core.csproj">
+      <Project>{7776a701-13d0-4ce8-8adf-3bd56b188e13}</Project>
+      <Name>AgileTeam.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

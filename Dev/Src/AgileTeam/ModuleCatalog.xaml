@@ -1,0 +1,33 @@
+﻿<modularity:ModuleCatalog   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+							xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+							xmlns:sys="clr-namespace:System;assembly=mscorlib"
+							xmlns:modularity="clr-namespace:Microsoft.Practices.Prism.Modularity;assembly=Microsoft.Practices.Prism.Composition">
+	<modularity:ModuleInfo ModuleName="Data"
+						   Ref="AgileTeam.Data.dll"
+						   ModuleType="AgileTeam.Data.DataModule, AgileTeam.Data, Version=1.0.0.0" />
+
+	<modularity:ModuleInfo ModuleName="Core"
+						   Ref="AgileTeam.Core.dll"
+						   ModuleType="AgileTeam.Core.CoreModule, AgileTeam.Core, Version=1.0.0.0">
+		<modularity:ModuleInfo.DependsOn>
+			<sys:String>Data</sys:String>
+		</modularity:ModuleInfo.DependsOn>
+	</modularity:ModuleInfo>
+
+	<modularity:ModuleInfo ModuleName="AppInteraction"
+						   Ref="AgileTeam.AppInteraction.dll"
+						   ModuleType="AgileTeam.AppInteraction.InteractionModule, AgileTeam.AppInteraction, Version=1.0.0.0">
+		<modularity:ModuleInfo.DependsOn>
+			<sys:String>Core</sys:String>
+			<sys:String>Data</sys:String>
+		</modularity:ModuleInfo.DependsOn>
+	</modularity:ModuleInfo>
+
+	<modularity:ModuleInfo ModuleName="Main"
+						   Ref="AgileTeam.exe"
+						   ModuleType="AgileTeam.MainModule, AgileTeam, Version=1.0.0.0">
+		<modularity:ModuleInfo.DependsOn>
+			<sys:String>AppInteraction</sys:String>
+		</modularity:ModuleInfo.DependsOn>
+	</modularity:ModuleInfo>
+</modularity:ModuleCatalog>

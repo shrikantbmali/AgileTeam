@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.Core", "AgileTeam.Core\AgileTeam.Core.csproj", "{7776A701-13D0-4CE8-8ADF-3BD56B188E13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.Dbl", "AgileTeam.Dbl\AgileTeam.Dbl.csproj", "{21906DB2-8172-4214-9B91-AD9ACD91A2B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.Wpf.UI", "AgileTeam.Wpf.UI\AgileTeam.Wpf.UI.csproj", "{2FC30086-C0E9-4992-9C4A-23283C3F9528}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{57139DFD-B790-43E9-95C5-BCE3C8FE8797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjileTeam.Core.Tests", "AgileTeam.Core.Tests\AjileTeam.Core.Tests.csproj", "{76AE8AD2-F3D3-4E33-B305-DEE9B7818308}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.Core.Entities", "AgileTeam.Core.Entities\AgileTeam.Core.Entities.csproj", "{D19C4FAD-499A-4F05-A9C8-72F1811E5E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.Wpf.Logic", "AgileTeam.Wpf.Logic\AgileTeam.Wpf.Logic.csproj", "{F3A1648A-CEAE-45F0-ADE3-47F860CFABB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileTeam.Wpf.Logic.Tests", "AgileTeam.Wpf.Logic.Tests\AgileTeam.Wpf.Logic.Tests.csproj", "{C100D677-F130-415C-9387-46206A6313B3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shrikant.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AgileTeam.Core\\AgileTeam.Core.csproj
+		SccProjectName1 = AgileTeam.Core
+		SccLocalPath1 = AgileTeam.Core
+		SccProjectUniqueName2 = AgileTeam.Wpf.UI\\AgileTeam.Wpf.UI.csproj
+		SccProjectName2 = AgileTeam.Wpf.UI
+		SccLocalPath2 = AgileTeam.Wpf.UI
+		SccProjectUniqueName3 = AgileTeam.Dbl\\AgileTeam.Dbl.csproj
+		SccProjectName3 = AgileTeam.Dbl
+		SccLocalPath3 = AgileTeam.Dbl
+		SccProjectUniqueName4 = AgileTeam.Core.Tests\\AjileTeam.Core.Tests.csproj
+		SccProjectTopLevelParentUniqueName4 = AgileTeam.WPF.sln
+		SccProjectName4 = AgileTeam.Core.Tests
+		SccLocalPath4 = AgileTeam.Core.Tests
+		SccProjectUniqueName5 = AgileTeam.Core.Entities\\AgileTeam.Core.Entities.csproj
+		SccProjectName5 = AgileTeam.Core.Entities
+		SccLocalPath5 = AgileTeam.Core.Entities
+		SccProjectUniqueName6 = AgileTeam.Wpf.Logic\\AgileTeam.Wpf.Logic.csproj
+		SccProjectName6 = AgileTeam.Wpf.Logic
+		SccLocalPath6 = AgileTeam.Wpf.Logic
+		SccProjectUniqueName7 = AgileTeam.Wpf.Logic.Tests\\AgileTeam.Wpf.Logic.Tests.csproj
+		SccProjectTopLevelParentUniqueName7 = AgileTeam.WPF.sln
+		SccProjectName7 = AgileTeam.Wpf.Logic.Tests
+		SccLocalPath7 = AgileTeam.Wpf.Logic.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7776A701-13D0-4CE8-8ADF-3BD56B188E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7776A701-13D0-4CE8-8ADF-3BD56B188E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7776A701-13D0-4CE8-8ADF-3BD56B188E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7776A701-13D0-4CE8-8ADF-3BD56B188E13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21906DB2-8172-4214-9B91-AD9ACD91A2B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21906DB2-8172-4214-9B91-AD9ACD91A2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21906DB2-8172-4214-9B91-AD9ACD91A2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21906DB2-8172-4214-9B91-AD9ACD91A2B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC30086-C0E9-4992-9C4A-23283C3F9528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC30086-C0E9-4992-9C4A-23283C3F9528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC30086-C0E9-4992-9C4A-23283C3F9528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC30086-C0E9-4992-9C4A-23283C3F9528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76AE8AD2-F3D3-4E33-B305-DEE9B7818308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76AE8AD2-F3D3-4E33-B305-DEE9B7818308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76AE8AD2-F3D3-4E33-B305-DEE9B7818308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D19C4FAD-499A-4F05-A9C8-72F1811E5E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19C4FAD-499A-4F05-A9C8-72F1811E5E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19C4FAD-499A-4F05-A9C8-72F1811E5E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19C4FAD-499A-4F05-A9C8-72F1811E5E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A1648A-CEAE-45F0-ADE3-47F860CFABB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A1648A-CEAE-45F0-ADE3-47F860CFABB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A1648A-CEAE-45F0-ADE3-47F860CFABB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A1648A-CEAE-45F0-ADE3-47F860CFABB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C100D677-F130-415C-9387-46206A6313B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C100D677-F130-415C-9387-46206A6313B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C100D677-F130-415C-9387-46206A6313B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76AE8AD2-F3D3-4E33-B305-DEE9B7818308} = {57139DFD-B790-43E9-95C5-BCE3C8FE8797}
+		{C100D677-F130-415C-9387-46206A6313B3} = {57139DFD-B790-43E9-95C5-BCE3C8FE8797}
+	EndGlobalSection
+EndGlobal

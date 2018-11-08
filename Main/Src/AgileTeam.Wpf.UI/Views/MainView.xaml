@@ -1,0 +1,73 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:i="clr-namespace:AgileTeam.Wpf.UI.AttachedPropertiesHelpers"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:ValueConverters="clr-namespace:AgileTeam.Wpf.UI.ValueConverters"
+		xmlns:userControls="clr-namespace:AgileTeam.Wpf.UI.UserControls"
+		xmlns:iViewModels="clr-namespace:AgileTeam.Wpf.Logic.ViewModels.IViewModels;assembly=AgileTeam.Wpf.Logic"
+		x:Class="AgileTeam.Wpf.UI.Views.MainView"
+		mc:Ignorable="d"
+		d:DataContext="{d:DesignInstance {x:Type iViewModels:IMainViewModel}, IsDesignTimeCreatable=False}"
+		i:WindowsAttachedBahaviors.Closed="{Binding ClosedCommand}"
+		Title="{Binding Title}"
+		Width="640"
+		Height="480"
+		MinWidth="640"
+		MinHeight="480"
+		WindowStartupLocation="CenterScreen"
+		WindowState="Maximized"
+		x:ClassModifier="internal">
+
+	<Window.Resources>
+		<ValueConverters:VisiblityConverter x:Key="VisiblityConverter" />
+	</Window.Resources>
+
+	<Grid>
+		<Grid.Resources>
+			<Style TargetType="{x:Type TextBlock}"
+				   x:Key="TextBlockStyle">
+				<Setter Property="Foreground"
+						Value="White" />
+				<Setter Property="VerticalAlignment"
+						Value="Center" />
+				<Setter Property="Margin"
+						Value="10,4,0,5" />
+				<Setter Property="FontSize"
+						Value="14" />
+			</Style>
+		</Grid.Resources>
+
+		<Grid Height="30"
+			  VerticalAlignment="Top"
+			  Background="CornflowerBlue">
+			<TextBlock Text="{Binding HeaderText}"
+					   Style="{StaticResource TextBlockStyle}" />
+			<DockPanel HorizontalAlignment="Right"
+					   Margin="0,0,10,0">
+				<TextBlock Text="{Binding UserName, FallbackValue=Shrikant}"
+						   Style="{StaticResource TextBlockStyle}"
+						   HorizontalAlignment="Right" />
+				<TextBlock Text="|"
+						   Style="{StaticResource TextBlockStyle}"
+						   HorizontalAlignment="Right" />
+				<TextBlock Text="Settings"
+						   Style="{StaticResource TextBlockStyle}"
+						   HorizontalAlignment="Right">
+					<TextBlock.InputBindings>
+						<MouseBinding Command="{Binding SettingsCommand}"
+									  MouseAction="LeftClick" />
+					</TextBlock.InputBindings>
+				</TextBlock>
+			</DockPanel>
+		</Grid>
+
+		<Grid VerticalAlignment="Top"
+			  HorizontalAlignment="Left"
+			  Margin="100,100,0,0"
+			  Width="450"
+			  Visibility="{Binding StartViewVisibility, Converter={StaticResource VisiblityConverter}, Mode=TwoWay, FallbackValue=Hidden}">
+			<userControls:StartViewUserControl DataContext="{Binding StartViewModel}" />
+		</Grid>
+	</Grid>
+</Window>
